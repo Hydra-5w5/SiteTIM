@@ -1,0 +1,39 @@
+/*
+Theme Name: Hydra 5w5 
+Theme URI: https://github.com/Hydra-5w5/SiteTIM
+Author: Moumy Ndiaye
+Version: 1.0.0
+Author URI: https://github.com/Hydra-5w5
+Description: Thème réalisé dans le cours 5w5 en équipe
+Requires at least: 6.0
+Tested up to: 6.1.1
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hydra-5w5
+*/
+
+@import "variable/dimension";
+@import "variable/couleur";
+@import "normalize/normalize";
+// @import "normalize/box-sizing";
+
+/* --------------------------------------------- base */
+@import "base/heading";
+// @import "base/espacement";
+// @import "base/lien";
+// @import "base/list";
+
+/* --------------------------------------------- composant */
+@import "composant/entete";
+@import "composant/front-page";
+@import "composant/single";
+@import "composant/category";
+@import "composant/search";
+@import "composant/barre-recherche";
+@import "composant/404";
+@import "composant/footer";
+
+
+/* --------------------------------------------- layout */
+@import "layout/contenu;
