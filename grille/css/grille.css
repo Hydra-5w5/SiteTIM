@@ -69,7 +69,9 @@ text-align: center;
   align-items: center;
   justify-content: space-around;
 }
-
+.session>h4{
+  font-size: 28px;
+}
 .cours{
   width: 6em;
   height: 6em;
