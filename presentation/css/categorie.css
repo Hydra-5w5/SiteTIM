@@ -139,6 +139,44 @@ footer select {
 
         }
 
+            /* Styles pour les tablettes */
+            @media screen and (min-width: 767px) {
+              .categorie {
+                  flex-direction: column;
+                  align-items: center;
+              }
+
+              .cat_image {
+                  width: 100%;
+              }
+
+              .desc_texte,
+              .desc_titre {
+                  width: 100%;
+                  margin-top: 20px; /* Ajoutez de l'espace entre le texte et l'image */
+                  text-align: center;
+                  margin-bottom: 2em;
+              }
+
+              /* Styles pour le footer */
+              .footer {
+                  text-align: center;
+                  background-color: #f9f9f9;
+                  padding: 20px 0;
+              }
+
+              /* Styles pour le select */
+              .footer-select select {
+                  width: 50%; /* Ajustez la largeur selon vos besoins */
+                  padding: 10px;
+                  font-size: 16px;
+                  border: 1px solid #ccc;
+                  margin: 0 auto; /* Pour centrer horizontalement */
+                  display: block;
+              }
+            }
+
+
 
 
 
