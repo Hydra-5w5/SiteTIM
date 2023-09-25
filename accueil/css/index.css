@@ -20,8 +20,8 @@ header h1 {
 
 #menuToggle {
   display: block;
-  position: relative;
-  left: -23em;
+  position: absolute;
+  left: 1em;
   z-index: 1;
 }
 /************* MENU BURGER DEBUT *************/
@@ -240,9 +240,7 @@ form input {
 }
 /************* VERSION TABLETTE *************/
 @media only screen and (min-width: 768px) {
-  #menuToggle {
-    left: -47em;
-  }
+  
   .cours {
     width: 90%;
     justify-content: center;
