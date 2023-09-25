@@ -236,3 +236,31 @@ form input{
   border-radius: 100%;
   background-color: grey;
 }
+/************* VERSION TABLETTE *************/
+@media only screen and (min-width: 768px) {
+  #menuToggle{
+    left: -47em;
+  }
+  .cours {
+    width: 90%;
+    justify-content: center;
+  }
+  .texte-descriptif{
+    margin: 3em auto auto;
+  }
+  .deuxiemePage h3:last-child{
+    margin-bottom: 5em;
+  }
+  footer h1{
+    margin-bottom: 0.5em;
+  }
+  .recherche{
+    margin-bottom: 3em;
+  }
+  .reseaux{
+    justify-content: center;
+  }
+  .reseau{
+    margin-right: 1em;
+  }
+}
