@@ -25,6 +25,9 @@ header h1 {
   z-index: 1;
 }
 /************* MENU BURGER DEBUT *************/
+#menu-pc{
+  display: none;
+}
 /* Liens du menu */
 #menuToggle a {
   text-decoration: none;
@@ -183,19 +186,18 @@ main {
   border-radius: 100%;
 }
 
-.texte-descriptif{
+.texte-descriptif {
   margin: 4em auto auto;
   text-align: center;
   font-size: 20px;
 }
-.deuxiemePage>h3{
-margin-bottom: 2em;
-text-align: center;
+.deuxiemePage > h3 {
+  margin-bottom: 2em;
+  text-align: center;
 }
 
-
 /************* PIED DE PAGE *************/
-footer{
+footer {
   background-color: rgb(174, 172, 172);
   width: 100vw;
   height: auto;
@@ -203,34 +205,34 @@ footer{
   flex-direction: column;
   align-items: center;
 }
-footer h1{
+footer h1 {
   margin-top: 1em;
 }
-.section{
+.section {
   text-align: center;
   margin-bottom: 1em;
 }
 
-.rejoindre h4{
-margin-bottom: 10px;
+.rejoindre h4 {
+  margin-bottom: 10px;
 }
-.section h2{
+.section h2 {
   margin-bottom: 0.5em;
 }
-.footer div>h2{
+.footer div > h2 {
   margin-bottom: 1em;
 }
-form input{
+form input {
   width: 20em;
 }
-.section{
+.section {
   width: 100%;
 }
-.reseaux{
+.reseaux {
   display: flex;
   justify-content: space-evenly;
 }
-.reseau{
+.reseau {
   width: 3em;
   height: 3em;
   border-radius: 100%;
@@ -238,29 +240,84 @@ form input{
 }
 /************* VERSION TABLETTE *************/
 @media only screen and (min-width: 768px) {
-  #menuToggle{
+  #menuToggle {
     left: -47em;
   }
   .cours {
     width: 90%;
     justify-content: center;
   }
-  .texte-descriptif{
+  .texte-descriptif {
     margin: 3em auto auto;
   }
-  .deuxiemePage h3:last-child{
+  .deuxiemePage h3:last-child {
     margin-bottom: 5em;
   }
-  footer h1{
+  footer h1 {
     margin-bottom: 0.5em;
   }
-  .recherche{
+  .recherche {
     margin-bottom: 3em;
   }
-  .reseaux{
+  .reseaux {
     justify-content: center;
   }
-  .reseau{
+  .reseau {
     margin-right: 1em;
+  }
+}
+/************* VERSION PC *************/
+@media only screen and (min-width: 1280px) {
+  #menuToggle {
+    display: none;
+  }
+  header{
+    justify-content: space-between;
+  }
+  nav{
+    width: 25em;
+    margin-right: 2em;
+  }
+  nav ul{
+    list-style: none;
+  }
+  ul a{
+    text-decoration: none;
+    color: black;
+  }
+  header h1{
+    margin: 1em;
+  }
+  #menu-pc{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  .cours {
+    width: 60%;
+  }
+  footer{
+    flex-wrap: wrap;
+    min-height: 22em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer h1{
+    margin-right: 1em;
+  }
+  .section{
+    height: 10em;
+    width: 21em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: left;
+  }
+  .suivezNous {
+    align-items: center;
   }
 }
