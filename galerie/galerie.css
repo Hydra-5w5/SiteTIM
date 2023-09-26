@@ -13,7 +13,6 @@ header {
   align-items: center;
   display: flex;
 }
-
 header h1 {
   width: 35%;
   margin-left: 1em;
@@ -32,7 +31,6 @@ header h1 {
   min-height: 100vh;
   margin: 0.5em auto;
 }
-
 .galeries h1 {
   margin-left: 1em;
   margin-bottom: 0.7em;
@@ -44,8 +42,7 @@ header h1 {
   overflow-x: scroll;
   justify-content: space-evenly;
 }
-
-.image {
+.images .image {
   width: 18em;
   height: 18em;
   background-color: grey;
