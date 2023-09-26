@@ -18,29 +18,34 @@ header h1 {
   margin: auto;
 }
 
+/************* MENU BURGER DEBUT *************/
 #menuToggle {
   display: block;
   position: absolute;
   left: 1em;
   z-index: 1;
+  /* Liens du menu */
+  /*
+  * Design du burger
+  */
+  /* 
+  * Fait un "X" avec les spans du burger
+  */
+  /*
+  * Cache le span du milieu
+  */
+  /*
+  * Modifie la place du dernier
+  */
 }
-
-/************* MENU BURGER DEBUT *************/
-#menu-pc {
-  display: none;
-}
-
-/* Liens du menu */
 #menuToggle a {
   text-decoration: none;
   color: #232323;
   transition: color 0.3s ease;
 }
-
 #menuToggle a:hover {
   color: tomato;
 }
-
 #menuToggle input {
   display: block;
   width: 40px;
@@ -52,10 +57,6 @@ header h1 {
   opacity: 0; /* Cache le checkbox */
   z-index: 2; /* Le place par dessus le burder */
 }
-
-/*
- * Design du burger
- */
 #menuToggle span {
   display: block;
   width: 33px;
@@ -68,37 +69,27 @@ header h1 {
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
-
 #menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
-
 #menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
-
-/* 
- * Fait un "X" avec les spans du burger
- */
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
-
-/*
- * Cache le span du milieu
- */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-
-/*
- * Modifie la place du dernier
- */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menuToggle input:checked ~ ul {
+  transform: none;
 }
 
 #menu {
@@ -114,14 +105,13 @@ header h1 {
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
-
 #menu li {
   padding: 10px 0;
   font-size: 22px;
 }
 
-#menuToggle input:checked ~ ul {
-  transform: none;
+#menu-pc {
+  display: none;
 }
 
 /************* MENU BURGER FIN *************/
