@@ -27,12 +27,26 @@ header {
   align-items: center;
   font-size: 18px;
 }
-.formations{
+
+.grille-de-cours{
+  width: 100vw;
   display: flex;
-  max-width: 100vw;
-  min-height: 90vh;
-  margin-top: 2em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+.cours-sessions{
+  width: 90%;
+  margin: auto;
+}
+.cours{
+  display: flex;
+  flex-direction: column;
+  min-height: 20em;
+  width: 90%;
+}
+
+
 
 .formation-specifique h1,.formation-generale h1{
 text-align: center;
