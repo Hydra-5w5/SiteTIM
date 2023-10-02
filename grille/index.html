@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/siteTimHtml/grille/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"/>
+      <script src="index.js"></script>
     <title>TIM 2023</title>
   </head>
   <body>
@@ -25,50 +26,20 @@
     </header>
     <div class="grille-de-cours">
         <h1>Grille De Cours</h1>
-        <select name="sessions" id="sessions">
+        <select name="sessions" id="sessions" onchange="trouverSession()">
             <option value=" 1">Session 1</option>
             <option value=" 2">Session 2</option>
             <option value=" 3">Session 3</option>
         </select>
         <div class="cours-sessions">
-                <div class="cours"><h4>Titre Cours</h4></div>
-                <div class="cours"><h4>Titre Cours</h4></div>
-                <div class="cours"><h4>Titre Cours</h4></div>
-                <div class="cours"><h4>Titre Cours</h4></div>
+                <div class="cours"><div class="numero-cours"><h5>5W5-1M1</h5></div><h4>Titre Cours</h4></div>
+                <div class="cours"><div class="numero-cours"><h5>5W5-1M1</h5></div><h4>Titre Cours</h4></div>
+                <div class="cours"><div class="numero-cours"><h5>5W5-1M1</h5></div><h4>Titre Cours</h4></div>
+                <div class="cours"><div class="numero-cours"><h5>5W5-1M1</h5></div><h4>Titre Cours</h4></div>
          
         </div>
       
     </div>
-    <div class="legende">
-        <h2>Légende</h2>
-        <div class="explication">
-            <div class="boite">
-                <div class="groupe-explication">
-                    <div class="boite-explicative">
-                        <h4>Bleu:</h4>
-                        <p>the industry's standard dummy text ever since the 1500s, 
-                            it to make </p>
-                    </div>
-                    <div class="boite-explicative">
-                        <h4>Bleu:</h4>
-                        <p>the industry's standard dummy text ever since the 1500s, 
-                            it to make </p>
-                    </div>
-                </div>
-                <div class="groupe-explication">
-                    <div class="boite-explicative">
-                        <h4>Bleu:</h4>
-                        <p>the industry's standard dummy text ever since the 1500s, 
-                            it to make </p>
-                    </div>
-                    <div class="boite-explicative">
-                        <h4>Bleu:</h4>
-                        <p>the industry's standard dummy text ever since the 1500s, 
-                            it to make </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
   </body>
 </html>

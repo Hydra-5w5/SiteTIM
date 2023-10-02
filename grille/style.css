@@ -28,23 +28,55 @@ header h1 {
 }
 
 .grille-de-cours {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.grille-de-cours h1 {
+  margin-bottom: 0.5em;
+}
 
 .cours-sessions {
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cours {
   display: flex;
   flex-direction: column;
-  min-height: 20em;
-  width: 90%;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  width: 13em;
+  height: 6em;
+  border-radius: 1.5em;
+  margin: 1em 0 1em 0;
+  border: 1px solid grey;
+}
+.cours h4 {
+  margin-top: 1em;
+}
+.cours .numero-cours {
+  background-color: grey;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2em;
+}
+
+#sessions {
+  border-radius: 1em;
 }
 
 .formation-specifique h1, .formation-generale h1 {
@@ -83,16 +115,6 @@ header h1 {
 
 .session > h4 {
   font-size: 28px;
-}
-
-.cours {
-  width: 6em;
-  height: 6em;
-  border: 1px solid grey;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  border-radius: 10%;
 }
 
 .cours h1 {
@@ -153,4 +175,25 @@ header h1 {
 
 .boite-explicative h4 {
   margin-right: 1em;
+}
+
+@media only screen and (min-width: 1280px) {
+  .grille-de-cours {
+    align-items: flex-start;
+  }
+  .grille-de-cours h1 {
+    margin-left: 1.8em;
+  }
+  .grille-de-cours select {
+    margin-left: 4em;
+  }
+  .cours-sessions {
+    margin-top: 2em;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .cours-sessions .cours {
+    height: 7.5em;
+  }
 }/*# sourceMappingURL=style.css.map */
