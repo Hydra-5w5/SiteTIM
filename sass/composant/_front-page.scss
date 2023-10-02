@@ -73,7 +73,11 @@
           .description-texte {
             width: 50%;
             height: 23em; 
-            padding: 1em;
+            text-align: center;
+          }
+
+          .texte h4 {
+            padding-left: 23em;
           }
           .conteneur {
             display: flex;
