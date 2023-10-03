@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100vw;
+  height: 5em;
+  align-items: center;
+  display: flex;
+  h1 {
+    width: 35%;
+    margin-left: 1em;
+  }
+}
+
+.menu {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.galeries {
+  display: flex;
+  flex-direction: column;
+  width: 98vw;
+  min-height: 100vh;
+  margin: 0.5em auto;
+  h1 {
+    margin-left: 1em;
+    margin-bottom: 0.7em;
+  }
+  .galerie{
+    width: 100%;
+  }
+}
+
+.images {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: space-around;
+  .image {
+    width: 18em;
+    display: block;
+   
+    height: 18em;
+    background-color: grey;
+    
+  }
+}
+
+.galerie-etudiants {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
