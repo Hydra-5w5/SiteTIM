@@ -46,9 +46,9 @@ header h1 {
   width: 450vw;
 }
 .images .image {
-  width: 18em;
+  width: 15em;
   display: block;
-  height: 18em;
+  height: 15em;
   background-color: grey;
 }
 
