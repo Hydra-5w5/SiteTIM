@@ -4,12 +4,15 @@
 .presentation{
     flex-direction: column;
     align-items: center;
+    background-color: gray;
   }
   
   .presentation-image{
     width: 100%;
     height: 23em;
     border: 1px solid gray;
+    background-color: red;
+    border-radius: 5em;
   }
   
   
@@ -29,12 +32,15 @@
     .presentation{
         flex-direction: column;
         align-items: center;
+        background-color: gray;
     }
   
     .presentation-image{
       width: 100%;
-      height: 23em;
+      height: 40em;
       border: 1px solid gray;
+      background-color: red;
+      border-radius: 5em;
     }
   
     .texte,
@@ -54,7 +60,7 @@
         @media screen and (min-width: 1200px) {
           
           .presentation{
-            width: 100vw;
+            width: auto;
             padding: 2em;
             display: flex;
             justify-content: center;
@@ -62,12 +68,16 @@
             align-items: baseline;
             text-wrap: wrap;
             flex-wrap: wrap;
+            background-color: gray;
+
           }
           
           .presentation-image{
             width: 50%;
-            height: 23em;
+            height: 30em;
             border: 1px solid gray;
+            background-color: red;
+            border-radius: 5em;
           }
           
           .description-texte {
