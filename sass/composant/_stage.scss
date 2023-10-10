@@ -6,12 +6,16 @@
 .stage{
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+    background-color: gray;
   }
   
   .stage_image {
     width: 100%;
     height: 23em;
     border: 1px solid gray;
+    background-color: red;
+    border-radius: 5em;
   }
   
   option {
@@ -43,11 +47,14 @@
     .stage{
       flex-direction: column;
       align-items: center;
+      background-color: gray;
     }
     .stage_image{
       width: 100%;
       height: 23em;
       border: 1px solid gray;
+      background-color: red;
+      border-radius: 5em;
     }
     .stage_description,
     .stage_titre {
@@ -79,7 +86,7 @@
   /* Styles spécifiques pour les grands écrans */
   @media screen and (min-width: 1200px) {
     .stage{
-      width: 100vw;
+      width: auto;
       padding: 2em;
       display: flex;
       justify-content: center;
@@ -87,11 +94,14 @@
       align-items: baseline;
       text-wrap: wrap;
       flex-wrap: wrap;
+      background-color: gray;
     }
     .stage_image {
       width: 50%;
       height: 23em;
       border: 1px solid gray;
+      background-color: red;
+      border-radius: 5em;
     }
 
     .stage_titre h4 {

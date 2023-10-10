@@ -375,6 +375,13 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 /* --------------------------------------------- composant */
 /* Styles spécifiques pour mobiles */
 .presentation {
@@ -449,12 +456,15 @@ a {
 .categorie {
   flex-direction: column;
   align-items: center;
+  background-color: gray;
 }
 
 .cat_image {
   width: 100%;
   height: 23em;
   border: 1px solid gray;
+  background-color: red;
+  border-radius: 5em;
 }
 
 option {
@@ -486,11 +496,14 @@ option {
   .categorie {
     flex-direction: column;
     align-items: center;
+    background-color: gray;
   }
   .cat_image {
-    width: 100%;
+    width: auto;
     height: 23em;
     border: 1px solid gray;
+    background-color: red;
+    border-radius: 5em;
   }
   .desc_texte,
   .desc_titre {
@@ -522,19 +535,16 @@ option {
 /* Styles spécifiques pour les grands écrans */
 @media screen and (min-width: 1200px) {
   .categorie {
-    width: 100vw;
-    padding: 2em;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: baseline;
-    text-wrap: wrap;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
   }
   .cat_image {
     width: 50%;
     height: 23em;
     border: 1px solid gray;
+    background-color: red;
+    border-radius: 5em;
   }
   .desc_texte {
     width: 50%;
@@ -583,12 +593,16 @@ option {
 .stage {
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
+  background-color: gray;
 }
 
 .stage_image {
   width: 100%;
   height: 23em;
   border: 1px solid gray;
+  background-color: red;
+  border-radius: 5em;
 }
 
 option {
@@ -620,11 +634,14 @@ option {
   .stage {
     flex-direction: column;
     align-items: center;
+    background-color: gray;
   }
   .stage_image {
     width: 100%;
     height: 23em;
     border: 1px solid gray;
+    background-color: red;
+    border-radius: 5em;
   }
   .stage_description,
   .stage_titre {
@@ -656,7 +673,7 @@ option {
 /* Styles spécifiques pour les grands écrans */
 @media screen and (min-width: 1200px) {
   .stage {
-    width: 100vw;
+    width: auto;
     padding: 2em;
     display: flex;
     justify-content: center;
@@ -664,11 +681,14 @@ option {
     align-items: baseline;
     text-wrap: wrap;
     flex-wrap: wrap;
+    background-color: gray;
   }
   .stage_image {
     width: 50%;
     height: 23em;
     border: 1px solid gray;
+    background-color: red;
+    border-radius: 5em;
   }
   .stage_titre h4 {
     text-align: left;
