@@ -508,7 +508,7 @@ option {
     background-color: gray;
   }
   .cat_image {
-    width: auto;
+    width: 100%;
     height: 23em;
     border: 1px solid gray;
     background-color: red;
@@ -550,7 +550,7 @@ option {
   }
   .cat_image {
     width: 50%;
-    height: 23em;
+    height: 27em;
     border: 1px solid gray;
     background-color: red;
     border-radius: 5em;
