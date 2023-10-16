@@ -36,7 +36,7 @@ header h1 {
   align-items: center;
   justify-content: center;
 }
-.grille-de-cours h1 {
+.grille-de-cours > h1 {
   margin-bottom: 0.5em;
 }
 
@@ -176,6 +176,36 @@ header h1 {
 
 .boite-explicative h4 {
   margin-right: 1em;
+}
+
+/***************************************BOITE POPUP****************************************************************/
+#checkbox-cours:checked + .description-cours {
+  display: block;
+}
+
+.cours-sessions input {
+  display: none;
+}
+
+.description-cours {
+  max-width: 30em;
+  min-height: 20em;
+  display: none;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  width: 90vw;
+  min-height: 15em;
+  background-color: blue;
+  border-radius: 15px;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+.description-cours h2 {
+  margin-bottom: 0.5em;
+}
+.description-cours p {
+  margin: auto 1em 1em auto;
 }
 
 .menu-bas {

@@ -52,12 +52,12 @@ function changerCours() {
 
 // Fonction qui crée un cours
 function creerCours(cours) {
-  // Créer les éléments HTMl
+  // Créer les éléments HTMl d'une boite de cours
   const coursDiv = document.createElement("div");
   const numeroCoursDiv = document.createElement("div");
   const numeroCours = document.createElement("h5");
   const titreCours = document.createElement("h4");
-
+  // Créer
   // Mettre les textes dans les éléments H4,H5
   numeroCours.innerHTML = cours.code;
   titreCours.innerHTML = cours.cours;

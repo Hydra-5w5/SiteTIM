@@ -36,7 +36,7 @@ header {
   align-items: center;
   justify-content: center;
 
-  h1 {
+  >h1 {
     margin-bottom: 0.5em;
   }
 }
@@ -137,6 +137,7 @@ header {
   margin: 1em 2em 3em auto;
 }
 
+
 .legende {
   width: 100vw;
   min-height: 10em;
@@ -174,6 +175,57 @@ header {
 .boite-explicative h4 {
   margin-right: 1em;
 }
+
+/***************************************BOITE POPUP****************************************************************/
+
+#checkbox-cours:checked + .description-cours {
+  display: block;
+}
+.cours-sessions{
+  input{
+   display: none;
+   }
+}
+ .description-cours {
+  max-width: 30em;
+  min-height: 20em;
+  display: none;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  width: 90vw;
+  min-height: 15em;
+  background-color: blue;
+  border-radius: 15px;
+ 
+  padding-left: 1em;
+  padding-bottom: 1em;
+  h2{
+    margin-bottom: .5em;
+  }
+  p{
+  
+    margin: auto 1em 1em auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .menu-bas {
   display: none;
 }
@@ -197,6 +249,9 @@ header {
       height: 7.5em;
     }
   }
+
+
+
 
   .menu-bas {
     display: block;
