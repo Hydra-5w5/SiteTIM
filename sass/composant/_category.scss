@@ -1,155 +1,179 @@
 /* Styles spécifiques pour mobiles */
 .categorie {
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+}
+
+.cat_image {
+  width: 100%;
+  height: 23em;
+  border: 1px solid gray;
+  background-color: red;
+  border-radius: 5em;
+}
+
+option {
+  font-size: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.footer-select {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.desc_texte,
+.desc_titre {
+  width: 100%;
+  margin-top: 20px;
+  /* Ajoutez de l'espace entre le texte et l'image */
+  text-align: center;
+  margin-bottom: 2em;
+  justify-content: center;
+  display: flex;
+}
+
+.desc_titre{
+  display: flex;
+  text-align: center;
+}
+
+.menu-nav {
+
+  display: none;
+
+}
+
+/* Styles spécifiques pour les tablettes */
+@media screen and (min-width: 768px) {
+  .categorie {
     flex-direction: column;
     align-items: center;
     background-color: gray;
   }
-  
-  .cat_image{
+
+  .cat_image {
     width: 100%;
-    height: 23em;
+    height: 40em;
     border: 1px solid gray;
     background-color: red;
     border-radius: 5em;
   }
-  
-  option {
-    font-size: 10px;
-    position: relative;
-    text-align: center;
-  }
-  
-  .footer-select {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-  }
-  
+
   .desc_texte,
   .desc_titre {
     width: 100%;
-    margin-top: 20px; /* Ajoutez de l'espace entre le texte et l'image */
+    margin-top: 20px;
+    /* Ajoutez de l'espace entre le texte et l'image */
     text-align: center;
     margin-bottom: 2em;
+    justify-content: center;
+    display: flex;
   }
-  
-  .menu-nav{
-  
-    display: none;
-  
-  }
-  
-  /* Styles spécifiques pour les tablettes */
-  @media screen and (min-width: 768px) {
-    .categorie {
-      flex-direction: column;
-      align-items: center;
-      background-color: gray;
-    }
-    
-    .cat_image{
-      width: 100%;
-      height: 23em;
-      border: 1px solid gray;
-      background-color: red;
-      border-radius: 5em;
-    }
-  
-    .desc_texte,
-    .desc_titre {
-        width: 100%;
-        margin-top: 20px; /* Ajoutez de l'espace entre le texte et l'image */
-        text-align: center;
-        margin-bottom: 2em;
-    }
-  
-    /* Styles pour le footer */
-    .footer {
-        text-align: center;
-        background-color: #f9f9f9;
-        padding: 20px 0;
-    }
-  
-    /* Styles pour le select */
-    .footer-select select {
-        width: 50%; /* Ajustez la largeur selon vos besoins */
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        margin: 0 auto; /* Pour centrer horizontalement */
-        display: block;
-    }
-  
-    .menu-nav{
-  
-      display: none;
-  
-  }
-  
-  }
-  
-  /* Styles spécifiques pour les grands écrans */
-  /* Styles spécifiques pour les grands écrans */
-  @media screen and (min-width: 1200px) {
-    .categorie {
-      flex-direction: column;
-      align-items: center;
-      background-color: gray;
-    }
-    
-    .cat_image{
-      width: 50%;
-      height: 27em;
-      border: 1px solid gray;
-      background-color: red;
-      border-radius: 5em;
-    }
-            
-            .desc_texte {
-              width: 50%;
-              height: 23em; 
-              padding: 1em;
-              text-align: left;
-            }
-            .desc_titre h4 {
-              text-align: left;
-              padding-left: 10px;
-            }
 
-  
-              /* Styles pour le footer horizontal plein écran */
-              .footer {
-                display: flex;
-                justify-content: space-between; /* Espacement horizontal entre les éléments du footer */
-                align-items: center;
-                width: 100%; /* Le footer occupe toute la largeur */
-                border-top: 1px solid gray; /* Ajouter une bordure supérieure au footer */
-            }
-  
-            /* Supprimer complètement l'élément select du footer pour les grands écrans */
-            .footer-select {
-                display: none;
-            }
-  
-            .menu-nav{
-  
-              display: flex;
-              justify-content: space-around;
-              color: black; 
-              padding: 20px 0; 
-              align-items: center;
-          }
-  
-          .nav-item{
-            border: 1px solid gray;
-            width: 10em;
-            text-align: center;
-        }
-  
-        .conteneur-categorie{
-          display: flex;
-          width: 100%;
-          flex-direction: row-reverse;
-        }
+  .desc_titre h4 {
+    display: flex;
+    text-align: center;
   }
-  
+
+  /* Styles pour le footer */
+  .footer {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px 0;
+  }
+
+  /* Styles pour le select */
+  .footer-select select {
+    width: 50%;
+    /* Ajustez la largeur selon vos besoins */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    /* Pour centrer horizontalement */
+    display: block;
+  }
+
+  .menu-nav {
+
+    display: none;
+
+  }
+
+}
+
+/* Styles spécifiques pour les grands écrans */
+/* Styles spécifiques pour les grands écrans */
+@media screen and (min-width: 1200px) {
+  .categorie {
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+
+  }
+
+  .cat_image {
+    width: 50%;
+    height: 40em;
+    border: 1px solid gray;
+    background-color: red;
+    border-radius: 5em;
+  }
+
+  .desc_texte {
+    width: 50%;
+    height: 23em;
+    padding: 1em;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .desc_titre {
+    display: none;
+  }
+
+  /* Styles pour le footer horizontal plein écran */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    /* Espacement horizontal entre les éléments du footer */
+    align-items: center;
+    width: 100%;
+    /* Le footer occupe toute la largeur */
+    border-top: 1px solid gray;
+    /* Ajouter une bordure supérieure au footer */
+  }
+
+  /* Supprimer complètement l'élément select du footer pour les grands écrans */
+  .footer-select {
+    display: none;
+  }
+
+  .menu-nav {
+
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  .nav-item {
+    border: 1px solid gray;
+    width: 10em;
+    text-align: center;
+  }
+
+  .conteneur-categorie {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+}
