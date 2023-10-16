@@ -614,6 +614,10 @@ option {
   border-radius: 5em;
 }
 
+.titre-pc {
+  display: none;
+}
+
 option {
   font-size: 10px;
   position: relative;
@@ -629,7 +633,8 @@ option {
 .stage_description,
 .stage_titre {
   width: 100%;
-  margin-top: 20px; /* Ajoutez de l'espace entre le texte et l'image */
+  margin-top: 20px;
+  /* Ajoutez de l'espace entre le texte et l'image */
   text-align: center;
   margin-bottom: 2em;
 }
@@ -647,7 +652,7 @@ option {
   }
   .stage_image {
     width: 100%;
-    height: 23em;
+    height: 40em;
     border: 1px solid gray;
     background-color: red;
     border-radius: 5em;
@@ -655,9 +660,13 @@ option {
   .stage_description,
   .stage_titre {
     width: 100%;
-    margin-top: 20px; /* Ajoutez de l'espace entre le texte et l'image */
+    margin-top: 20px;
+    /* Ajoutez de l'espace entre le texte et l'image */
     text-align: center;
     margin-bottom: 2em;
+  }
+  .titre-pc {
+    display: none;
   }
   /* Styles pour le footer */
   .footer {
@@ -667,11 +676,13 @@ option {
   }
   /* Styles pour le select */
   .footer-select select {
-    width: 50%; /* Ajustez la largeur selon vos besoins */
+    width: 50%;
+    /* Ajustez la largeur selon vos besoins */
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    margin: 0 auto; /* Pour centrer horizontalement */
+    margin: 0 auto;
+    /* Pour centrer horizontalement */
     display: block;
   }
   .menu-nav {
@@ -694,7 +705,7 @@ option {
   }
   .stage_image {
     width: 50%;
-    height: 23em;
+    height: 35em;
     border: 1px solid gray;
     background-color: red;
     border-radius: 5em;
@@ -702,6 +713,12 @@ option {
   .stage_titre h4 {
     text-align: left;
     padding-left: 10px;
+  }
+  .stage_titre {
+    display: none;
+  }
+  .titre-pc {
+    display: flex;
   }
   .stage_description {
     width: 50%;
@@ -712,10 +729,13 @@ option {
   /* Styles pour le footer horizontal plein écran */
   .footer {
     display: flex;
-    justify-content: space-between; /* Espacement horizontal entre les éléments du footer */
+    justify-content: space-between;
+    /* Espacement horizontal entre les éléments du footer */
     align-items: center;
-    width: 100%; /* Le footer occupe toute la largeur */
-    border-top: 1px solid gray; /* Ajouter une bordure supérieure au footer */
+    width: 100%;
+    /* Le footer occupe toute la largeur */
+    border-top: 1px solid gray;
+    /* Ajouter une bordure supérieure au footer */
   }
   /* Supprimer complètement l'élément select du footer pour les grands écrans */
   .footer-select {
