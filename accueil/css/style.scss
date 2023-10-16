@@ -12,10 +12,16 @@ header {
   height: 5em;
   align-items: center;
   display: flex;
+
+  /****Background color du header ***/
+  background-color: #250036;
 }
 
-header h1 {
-  margin: auto;
+header img {
+  margin-left: 45vw;
+  width: 60px;
+  height: 30px;
+
 }
 /************* MENU BURGER DEBUT *************/
 #menuToggle {
@@ -26,12 +32,12 @@ header h1 {
   /* Liens du menu */
   a {
     text-decoration: none;
-    color: #232323;
+    color: #ffffff;
 
     transition: color 0.3s ease;
   }
   a:hover {
-    color: tomato;
+    color:#250036;
   }
 
   input {
@@ -58,7 +64,7 @@ header h1 {
     margin-bottom: 5px;
     position: relative;
 
-    background: #cdcdcd;
+    background: rgb(255, 255, 255);
     border-radius: 3px;
 
     z-index: 1;
@@ -68,7 +74,12 @@ header h1 {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
+  span.ligneMilieu{
+    margin-left: 10px;
+
+  }
   span:first-child {
+    
     transform-origin: 0% 0%;
   }
 
@@ -81,7 +92,7 @@ header h1 {
   input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: #ffffff;
   }
 
   /*
@@ -110,7 +121,7 @@ header h1 {
   padding: 50px;
   padding-top: 125px;
 
-  background: #ededed;
+  background: #6E3D80;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
