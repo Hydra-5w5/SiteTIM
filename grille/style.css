@@ -179,7 +179,7 @@ header h1 {
 }
 
 /***************************************BOITE POPUP****************************************************************/
-#checkbox-cours:checked + .description-cours {
+input[type=checkbox]:checked + .description-cours {
   display: block;
 }
 
@@ -206,6 +206,11 @@ header h1 {
 }
 .description-cours p {
   margin: auto 1em 1em auto;
+}
+.description-cours button {
+  position: relative;
+  padding: 0.5em;
+  right: 12em;
 }
 
 .menu-bas {

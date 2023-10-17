@@ -178,7 +178,7 @@ header {
 
 /***************************************BOITE POPUP****************************************************************/
 
-#checkbox-cours:checked + .description-cours {
+input[type=checkbox]:checked + .description-cours {
   display: block;
 }
 .cours-sessions{
@@ -206,6 +206,12 @@ header {
   p{
   
     margin: auto 1em 1em auto;
+  }
+  button{
+    position: relative;
+    padding: 0.5em;
+    right: 12em;
+    
   }
 }
 
