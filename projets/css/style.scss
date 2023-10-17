@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  header {
+    width: 100vw;
+    height: 5em;
+    align-items: center;
+    display: flex;
+  }
+  
+  header h1 {
+    margin: auto;
+  }
+  /************* MENU BURGER DEBUT *************/
+  #menuToggle {
+    display: block;
+    position: absolute;
+    left: 1em;
+    z-index: 1;
+    /* Liens du menu */
+    a {
+      text-decoration: none;
+      color: #232323;
+  
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: tomato;
+    }
+  
+    input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+  
+      cursor: pointer;
+  
+      opacity: 0; /* Cache le checkbox */
+      z-index: 2; /* Le place par dessus le burder */
+    }
+  
+    /*
+   * Design du burger
+   */
+    span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+  
+      background: #cdcdcd;
+      border-radius: 3px;
+  
+      z-index: 1;
+  
+      transform-origin: 4px 0px;
+  
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    }
+    span:first-child {
+      transform-origin: 0% 0%;
+    }
+  
+    span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+    /* 
+   * Fait un "X" avec les spans du burger
+   */
+    input:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+  
+    /*
+   * Cache le span du milieu
+   */
+    input:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    /*
+   * Modifie la place du dernier
+   */
+    input:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+  }
+  
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+  
+  #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+  
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    li {
+      padding: 10px 0;
+      font-size: 22px;
+    }
+  }
+  
+  #menu-pc {
+    display: none;
+  }
+  
+  /************* MENU BURGER FIN *************/
+  .main-pc{
+    display: none;
+}
+  main {
+    width: 100vw;
+    height: auto;
+    background-color: rgb(174, 172, 172);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .type-projets{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: red;
+      padding-bottom: 2em;
+      .type{
+        margin-top: 1em;
+        width: 10em;
+        border-radius: 15%;
+   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+        .img{
+          border-radius: 15%;
+          margin-top: 1em;
+          width: 8em;
+          height: 8em;
+          background-color: grey;
+        }
+        h1{
+          margin-top: 0.2em;
+          margin-bottom: 0.3em;
+          text-align: center;
+          
+        }
+        a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    h1,p{
+        margin-top: 0.5em;
+    }
+    p{
+        width: 90%;
+        text-align: center;
+    }
+  
+  }
+  
+  
+  
+  
+  /************* PIED DE PAGE *************/
+  footer {
+    background-color: rgb(174, 172, 172);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer h1 {
+    margin-top: 1em;
+  }
+  .section {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .rejoindre h4 {
+    margin-bottom: 10px;
+  }
+  .section h2 {
+    margin-bottom: 0.5em;
+  }
+  .footer div > h2 {
+    margin-bottom: 1em;
+  }
+  form input {
+    width: 20em;
+  }
+  .section {
+    width: 100%;
+  }
+  .reseaux {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .reseau {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    background-color: grey;
+  }
+  /************* VERSION TABLETTE *************/
+  @media only screen and (min-width: 768px) {
+   
+   
+   
+    footer h1 {
+      margin-bottom: 0.5em;
+    }
+    .recherche {
+      margin-bottom: 3em;
+    }
+    .reseaux {
+      justify-content: center;
+    }
+    .reseau {
+      margin-right: 1em;
+    }
+  }
+  /************* VERSION PC *************/
+  @media only screen and (min-width: 1280px) {
+    #menuToggle {
+      display: none;
+    }
+    header {
+      justify-content: space-between;
+    }
+    nav {
+      width: 25em;
+      margin-right: 2em;
+    }
+    nav ul {
+      list-style: none;
+    }
+    ul a {
+      text-decoration: none;
+      color: black;
+    }
+    header h1 {
+      margin: 1em;
+    }
+    #menu-pc {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .bouton-plus{
+        display: none;
+    }
+    main{
+      align-items: flex-start;
+     
+      p{
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 3em;
+      }
+      >h1,p{
+        margin-left: 1em;
+      }
+      .type-projets{
+        min-height: 25em;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+     }
+   
+    footer {
+      flex-wrap: wrap;
+      min-height: 22em;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+    footer h1 {
+      margin-right: 1em;
+    }
+    .section {
+      height: 10em;
+      width: 21em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 3em;
+      margin-bottom: 1em;
+      text-align: left;
+    }
+    .suivezNous {
+      align-items: center;
+    }
+  }
+  
