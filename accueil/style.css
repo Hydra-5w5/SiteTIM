@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +6,11 @@
   font-family: "Inter", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  /***Couleur background du site web***/
+  background-color: #340044;
 }
 
 header {
@@ -46,9 +52,6 @@ header img {
   text-decoration: none;
   color: #ffffff;
   transition: color 0.3s ease;
-}
-#menuToggle a:hover {
-  color: #250036;
 }
 #menuToggle input {
   display: block;
@@ -120,12 +123,16 @@ header img {
 #menu-pc {
   display: none;
 }
+#menu-pc a {
+  color: white;
+}
 
 /************* MENU BURGER FIN *************/
 main {
   height: 90vh;
   width: 100vw;
-  background-color: rgb(174, 172, 172);
+  /***Couleur background du site web***/
+  background-color: #340044;
 }
 
 .video {
@@ -186,14 +193,72 @@ main {
   text-align: center;
 }
 
+/*** CSS pour les vagues de background ****************/
+.containerVagues {
+  position: relative;
+}
+
+.svg1, .svg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.svg1 {
+  z-index: 1; /* Le premier SVG sera au-dessus */
+}
+
+.svg2 {
+  z-index: 0; /* Le deuxième SVG sera en dessous */
+  padding-top: 20px;
+}
+
+/*****************deuxiemePage******************************************************/
+/***********thematiques-cours****************/
+div.deuxiemePage h2 {
+  color: #ffffff;
+  font-size: 29px;
+}
+div.deuxiemePage p {
+  color: #AC46A1;
+  font-size: 15px;
+}
+div.deuxiemePage h3 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.containerVagues2 {
+  padding-top: 50px;
+}
+
 /************* PIED DE PAGE *************/
 footer {
-  background-color: rgb(174, 172, 172);
+  background-color: #44005B;
   width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/**Form Recherche**/
+.search-container {
+  position: relative;
+}
+
+.custom-search {
+  width: 260px;
+  padding: 10px;
+  background: #7F32B1;
+  border: 1px solid #7F32B1;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none; /* Retire le contour du champ au focus */
+}
+
+.custom-search::placeholder {
+  color: #7F32B1; /* Couleur du texte de l'indicateur de placeholder */
 }
 
 footer h1 {
@@ -205,12 +270,18 @@ footer h1 {
   margin-bottom: 1em;
 }
 
+.adresse h4 {
+  color: #ffffff;
+}
+
 .rejoindre h4 {
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .section h2 {
   margin-bottom: 0.5em;
+  color: #AC46A1;
 }
 
 .footer div > h2 {
