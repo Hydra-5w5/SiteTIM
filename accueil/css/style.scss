@@ -127,10 +127,10 @@ header img {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  border-bottom-right-radius: 30px;
+  border-bottom-right-radius: 20px;
   
   
-  background: #886495;
+  background: #6E3D80;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
@@ -144,8 +144,10 @@ header img {
     
   
   }
+  li:hover{
+    background-color: #4F1A64;
+  }
   
- 
 }
 
 #menu-pc {

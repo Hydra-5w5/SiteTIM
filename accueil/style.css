@@ -108,8 +108,8 @@ header img {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  border-bottom-right-radius: 30px;
-  background: #886495;
+  border-bottom-right-radius: 20px;
+  background: #6E3D80;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -119,6 +119,9 @@ header img {
 #menu li {
   padding: 10px 0;
   font-size: 22px;
+}
+#menu li:hover {
+  background-color: #4F1A64;
 }
 
 #menu-pc {
