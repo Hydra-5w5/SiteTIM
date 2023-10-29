@@ -43,7 +43,8 @@ header {
 .images {
   display: flex;
   justify-content: space-around;
-  width: 450vw; 
+  min-width: 100em;
+  gap: 2em;
   .image {
     width: 15em;
     display: block;
